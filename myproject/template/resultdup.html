@@ -1,0 +1,56 @@
+{%  load static %}
+
+<html>
+
+<head>
+      <style>
+        body { height: 100%;
+  margin: 0;   
+background-image: url("{% static 'myapp/images/photo.jpg' %}");
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+a:link, a:visited {
+  background-color: white;
+  color: black;
+  border: 2px solid green;
+  padding: 20px 90px;
+  align="center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: green;
+  color: white;
+}
+</style>
+</head>
+<br><br><br><br><br>
+<body>
+<font size="6"><h1 style="text-align:center;">CAN'T DECLEAR RESULT</h1></font><br><br>
+<h1 style="text-align:center;">The voting are equal between <font color="red"> {{name100}}  {{ name200}}   {{name300}}  {{name400}}</font></h1>
+<br>
+<br>
+
+
+
+<h3 style="text-align:center;"><a href='http://127.0.0.1:8000/home/'> CLICK HERE TO START VOTING AGAIN  </a><br></h3>
+
+
+
+</form>
+
+
+
+
+
+</body>
+</html>

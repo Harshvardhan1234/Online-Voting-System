@@ -1,0 +1,79 @@
+{%  load static %}
+<html>
+
+                   <head>
+                                  <style> 
+ 
+  .container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+                                                  body { height: 100%;
+  margin: 0;   
+ background-image: url("{% static 'myapp/images/photo.jpg' %}");
+                   /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+input{
+oninvalid="alert('You must fill out the form!');  
+
+}     
+
+                                   </style>
+    <title>CHOICE PAGE</title>
+                   </head>
+
+
+
+          <body>
+      <font size="5">                    <h1 style="text-align:center;">CANDIDATE
+                         </h1>
+
+       <form action='candidate' method='get'></font>
+     <font size="5"><h1 style="text-align:center;">CHOOSE YOUR CANDIDATE</h1>
+     
+     
+<div class="container">
+  <img src="{% static 'myapp/images/photo3.gif' %}" style="width:20%;">
+ 
+<div class="centered">
+
+<h1 style="text-align:center;">candidate1: <input   type="radio" name="candidate" value="candidate1"  required><br></h1>
+
+<h1 style="text-align:center;">candidate2:  <input type="radio" name="candidate" value="candidate2" required><br></h1>
+
+<h1 style="text-align:center;">candidate3:  <input type="radio" name="candidate" value="candidate3" required> <br></h1>
+
+<h1 style="text-align:center;">No choice:  <input type="radio" name="candidate" value="no choice" requiredc> <br></h1>
+</div>
+  
+  </div>
+
+
+                                         
+<h1 style="text-align:center;"><input type ='submit' >submit</h1>
+
+
+                                      
+
+
+</form>
+</body>
+</html>

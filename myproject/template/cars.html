@@ -1,0 +1,53 @@
+def rotate_n(a,n):
+     name=""
+     for x in a:
+         z=ord(x)
+         #print(type(z))
+         if z==90:
+            z=64
+            c=z+n
+            print(">>>>",c)
+            "name+=chr(c)
+         elif z==122:
+            z=96
+            c=z+n
+            print(">>>>",c)
+            name+=chr(c)
+         else:
+            name+=chr(c)
+            
+     return name
+            
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+          
+
+
+a=str(input("Enter the string : "))
+n=int(input("Enter the vlaue of  n: "))
+x=rotate_n(a,n)
+print(a,"rotated by",n,"is",x)

@@ -1,0 +1,43 @@
+{%  load static %}
+<html>
+<head>
+<style>
+  body { height: 100%;
+  margin: 0;   
+background-image: url("{% static 'myapp/images/photo.jpg' %}");
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+
+
+a:link, a:visited {
+  background-color: DarkMagenta;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: red;
+}
+</style>
+</head>
+<body>
+<br><br>
+<font size="8"><h1 style="text-align:center;"> WELCOME TO VOTING </h1></font>
+<br>
+<br>
+<font size="6"><h1 style="text-align:center;"><a href="http://127.0.0.1:8000/home" target="_blank">CLICK HERE TO START YOUR VOTING</a></h1>
+
+</body>
+</html>

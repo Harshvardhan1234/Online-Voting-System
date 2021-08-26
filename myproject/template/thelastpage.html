@@ -1,0 +1,32 @@
+{%  load static %}
+<html>
+<head>
+<style>
+
+
+
+       body {  height: 100%;
+  margin: 0;   
+background-image: url("{% static 'myapp/images/photo231.jpg' %}");
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+</style>
+
+
+
+
+</head>
+<body>
+<br>
+<font size="8"><h1 style="text-align:center;">RESULT</h1>
+
+<h2 style="text-align:center;">THE ELECTED PERSON IS <font color="Indigo"> {{name}}</font> with <font color="DarkRed">  {{1score}} </font> VOTES</h2>
+</body>
+</html>

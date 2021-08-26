@@ -1,0 +1,41 @@
+
+{%  load static %}
+<html>
+<head>
+<style>
+       body { height: 100%;
+  margin: 0;   
+background-image: url("{% static 'myapp/images/photo.jpg' %}");
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+a:link, a:visited {
+  background-color: white;
+  color: black;
+  border: 2px solid green;
+  padding: 20px 90px;
+  align="center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: green;
+  color: white;
+}
+</style>
+
+</head>
+
+<font size="7"><h1 style="text-align:center;">YOU HAVE ALREADY VOTED </h1>
+<br>
+<h2 style="text-align:center;"><a href="http://127.0.0.1:8000/home/">CLICK HERE TO 
+CONTINUE</a></h2>
+
+</html>
